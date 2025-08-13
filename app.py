@@ -1,6 +1,7 @@
+import time
 import requests
 import pandas as pd
-import streamlit as st   # ← これが関数デコレータより前に必要
+import streamlit as st
 from datetime import datetime
 import plotly.graph_objects as go
 
