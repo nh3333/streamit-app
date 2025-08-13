@@ -1,3 +1,9 @@
+import requests
+import pandas as pd
+import streamlit as st   # ← これが関数デコレータより前に必要
+from datetime import datetime
+import plotly.graph_objects as go
+
 @st.cache_data(ttl=15*60)
 def fetch_daily(symbol: str, api_key: str) -> pd.DataFrame:
     """Alpha Vantage 日足取得。Adjustedにも対応し、制限時は短いリトライを行う。"""
