@@ -1,10 +1,10 @@
-# ---- imports ----
 import time
 import requests
 import pandas as pd
 import streamlit as st
 from datetime import datetime
 import plotly.graph_objects as go
+
 
 # ---- page config ----
 st.set_page_config(page_title="株価ビューア（ローソク足対応）", layout="wide")
